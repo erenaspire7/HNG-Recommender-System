@@ -1,0 +1,15 @@
+id,user_id,site,site_image,title,des,link,date,image,created_at,updated_at,tags
+1,1,"Elijah Okokon",https://lh3.googleusercontent.com/a-/AAuE7mAo4FOP7u5EsOd6jSUn8fBGAXzqbiOs9LhXkbVOug,"my fist post",oaokaokaoa,/post/my-fist-post-03e,"Sep 11th, 2019 01:26 PM",,NULL,NULL,NULL
+2,1,"Elijah Okokon",https://lh3.googleusercontent.com/a-/AAuE7mAo4FOP7u5EsOd6jSUn8fBGAXzqbiOs9LhXkbVOug,"test code","test
+test
+\~~~html
+test
+\~~~",/post/test-code-bc6,"Sep 11th, 2019 07:00 PM",,NULL,NULL,NULL
+3,2,"Louis Bassey Okokon",/storage/2/images/thumbnail/IMG-20181122-WA0018_small_1568536984.jpg,aha," ",/post/aha-720,"Sep 15th, 2019 03:54 PM",/storage/2/images/img-qygt0us7ox.jpeg,NULL,NULL,NULL
+4,2,"Louis Bassey Okokon",/storage/2/images/thumbnail/IMG-20181122-WA0018_small_1568536984.jpg,again," ",/post/again-be4,"Sep 15th, 2019 04:48 PM",/storage/2/images/img-ztxcsj0285.jpeg,NULL,NULL,NULL
+5,2,"Louis Bassey Okokon",/storage/2/images/thumbnail/IMG-20181122-WA0018_small_1568536984.jpg,kkj,![](/storage/2/images/thumbnail/img-1vlmfui4nn_large_.jpeg)![](/storage/2/images/thumbnail/img-mb07f2x453'_large_'1568563858994.jpeg),/post/kkj-4bd,"Sep 15th, 2019 05:11 PM",/storage/2/images/thumbnail/img-1vlmfui4nn_small_.jpeg,NULL,NULL,Technology
+6,2,"Louis Bassey Okokon",/storage/2/images/thumbnail/IMG-20181122-WA0018_small_1568536984.jpg,upsard,"am adding
+
+![](/storage/2/images/thumbnail/img-ydyipn0t61_large_.jpeg)
+
+![](/storage/2/images/thumbnail/img-lip9ljqexr_large_.jpeg)",/post/upsard-ea7,"Sep 16th, 2019 08:55 AM",/storage/2/images/thumbnail/img-ydyipn0t61_small_.jpeg,NULL,NULL,"Politics, Technology, Health"

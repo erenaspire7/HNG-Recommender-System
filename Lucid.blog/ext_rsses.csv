@@ -1,0 +1,4 @@
+id,user_id,title,url,description,image,link,lastBuildDate,created_at,updated_at,category
+1,2,Stratechery by Ben Thompson,http://stratechery.com/feed/,"On the business, strategy, and impact of technology.",https://stratechery.com/wp-content/uploads/2018/03/cropped-android-chrome-512x512-1-32x32.png,,"
+	Thu, 19 Sep 2019 17:31:06 +0000	",NULL,NULL,NULL
+2,2,Sample Feed - Favorite RSS Related Software & Resources,https://www.feedforall.com//sample-feed.xml,Take a look at some of FeedForAll's favorite software and resources for learning more about RSS.,http://www.feedforall.com/feedforall-temp.gif,http://www.feedforall.com,"Mon, 1 Nov 2004 13:17:17 -0500",NULL,NULL,main
