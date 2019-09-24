@@ -130,9 +130,9 @@ def recommend_article_to_read(index, cosine_sim=cosines_similarity):
     else: return "No recommedations for this user"   
 ```
 
-### HOW THE RECOMMENDER SYSTEM WORKS 
+## HOW THE RECOMMENDER SYSTEM WORKS 
   
-## TEST FOR WHO TO FOLLOW RECOMMENDER SYSTEM FOR LUCID.BLOG
+### TEST FOR WHO TO FOLLOW RECOMMENDER SYSTEM FOR LUCID.BLOG
   ```bash
   recommend_to_follow(50)
   #This displays something:
@@ -142,7 +142,7 @@ def recommend_article_to_read(index, cosine_sim=cosines_similarity):
   604    chukwuemeka anyanwu
   641          Deborah Ajayi
 ```
-## TEST FOR WHAT ARTICLE TO READ RECOMMENDER SYSTEM FOR LUCID.BLOG
+### TEST FOR WHAT ARTICLE TO READ RECOMMENDER SYSTEM FOR LUCID.BLOG
 ```bash
 recommend_article_to_read(24)
 #This displays something like:
