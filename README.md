@@ -1,4 +1,3 @@
-[![Documentation Status](https://colab.research.google.com/drive/1iZaAArPjxaXdL482uAH4aEysl1BlgKEA#scrollTo=Nh33SHA0Y3DQ)](https://github.com/yusuffjamal3/HNG-Recommender-System)
 
 <div align="center">
 
