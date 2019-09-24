@@ -135,7 +135,7 @@ def recommend_article_to_read(index, cosine_sim=cosines_similarity):
 ### TEST FOR WHO TO FOLLOW RECOMMENDER SYSTEM FOR LUCID.BLOG
   ```bash
   recommend_to_follow(50)
-  #This displays something:
+  #This displays something like:
   105     Damilare Olabimtan
   279        UDENKWOR NKECHI
   438         Angela Egerega
