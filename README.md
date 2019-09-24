@@ -1,3 +1,11 @@
+<div align="center">
+
+![hng](https://res.cloudinary.com/iambeejayayo/image/upload/v1554240066/brand-logo.png)
+
+<br>
+
+</div>
+
 This is Task2  assigned to Machine Learning gruops in the ongoing HNG intership programme. The teams were assigned to build a Recommender System for lucid.blog. It was required that the recommendation system should suggest who to follow and what articles to read for a user.
 The lucid.blog database was provided from where we selected the necessary features needed, perform Exploratory Data Analysis and built  a model for our recommendation
 
