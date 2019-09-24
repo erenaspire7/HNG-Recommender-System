@@ -39,7 +39,8 @@ dbcursor.execute('show tables')
 for table in dbcursor:
     print(table)
 ```
-The above steps were carried out to set the data ready for extensive data exploratory analysis.
+Next we did some Exploratory Data Analysis
+# EXPLORATORY DATA ANALYSIS
 
 
 
