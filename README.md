@@ -12,10 +12,11 @@
 ## INTRODUCTION
 This is the Task submission by Team C++ of the HNG Internship 6.0. We were assigned to build a Recommender System for lucid.blog. The recommender suggests who to follow and what articles to read for users based on data gathered from lucid database.
 
-
+ ## Getting Started
 The following steps were taken to achieve the objectives:
 
-- We imported the necessary libraries:
+## Prerequisites
+We imported the necessary libraries:
 ```bash
 import pandas as pd
 import mysql.connector
@@ -102,10 +103,7 @@ def recommend_to_follow(index, cosine_sim=cosine_similarity):
         return users['name'].iloc[lucid_index]
     else: return "No recommedations for this user"
    ```
-  ## TEST FOR WHO TO FOLLOW RECOMMENDER SYSTEM FOR LUCID.BLOG
-  ```bash
-  recommend_to_follow(50)
-```
+ 
 ## MODEL FOR WHAT ARTICLE TO READ ON LUCID.BLOG
 
 The following steps were repeated:-
@@ -131,7 +129,32 @@ def recommend_article_to_read(index, cosine_sim=cosines_similarity):
         return posts['title'].iloc[lucid_index]
     else: return "No recommedations for this user"   
 ```
+
+### HOW THE RECOMMENDER SYSTEM WORKS 
+  
+## TEST FOR WHO TO FOLLOW RECOMMENDER SYSTEM FOR LUCID.BLOG
+  ```bash
+  recommend_to_follow(50)
+  #This displays something:
+  105     Damilare Olabimtan
+  279        UDENKWOR NKECHI
+  438         Angela Egerega
+  604    chukwuemeka anyanwu
+  641          Deborah Ajayi
+```
 ## TEST FOR WHAT ARTICLE TO READ RECOMMENDER SYSTEM FOR LUCID.BLOG
 ```bash
 recommend_article_to_read(24)
+#This displays something like:
+0    I learnt how to use the table tag as i have us...
+1     I am on this journey with start.ng, and here ...
+2    I have not been attending classes on the HNG c...
+3    My journey on **StartNG** pre-internship progr...
+4     A Summary on The “idongesit.html” CV, Its Str...
 ```
+## Built with Anaconda's Jupyter notebook by TEAM C++
+
+
+
+
+
