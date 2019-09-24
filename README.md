@@ -6,7 +6,7 @@
 
 </div>
 
-#RECOMMENDER SYSTEM FOR LUCID.BLOG
+# RECOMMENDER SYSTEM FOR LUCID.BLOG
 
 This is the Task submission by Team C++ of the HNG Internship 6.0. We were assigned to build a Recommender System for lucid.blog The recommender suggests who to follow and what articles to read for users based on data gathered from lucid database.
 The steps taken were perform Exploratory Data Analysis and built  a model for our recommendation
