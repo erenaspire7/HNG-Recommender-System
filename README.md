@@ -6,8 +6,10 @@
 
 </div>
 
-This is Task2  assigned to Machine Learning gruops in the ongoing HNG intership programme. The teams were assigned to build a Recommender System for lucid.blog. It was required that the recommendation system should suggest who to follow and what articles to read for a user.
-The lucid.blog database was provided from where we selected the necessary features needed, perform Exploratory Data Analysis and built  a model for our recommendation
+#RECOMMENDER SYSTEM FOR LUCID.BLOG
+
+This is the Task submission by Team C++ of the HNG Internship 6.0. We were assigned to build a Recommender System for lucid.blog The recommender suggests who to follow and what articles to read for users based on data gathered from lucid database.
+The steps taken were perform Exploratory Data Analysis and built  a model for our recommendation
 
 To achieve the above listed objectives, the following steps were carried out:
 
