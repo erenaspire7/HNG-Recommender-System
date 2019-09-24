@@ -155,6 +155,6 @@ recommend_article_to_read(24)
 ## Built with Anaconda's Jupyter notebook by TEAM C++
 
 
-
+Link to Lucid post https://lucid.blog/grace.eye73/post/team-c-recommender-system-2d8
 
 
