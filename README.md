@@ -43,7 +43,7 @@ Next we did some Exploratory Data Analysis
 ## EXPLORATORY DATA ANALYSIS
 
 checked the comments table (it was empty)
-id	post_id	user_id	comment	created_at	updated_at
+https://colab.research.google.com/drive/1iZaAArPjxaXdL482uAH4aEysl1BlgKEA#scrollTo=Nh33SHA0Y3DQ&line=3&uniqifier=1
 
 checking out the contact_settings table
 
