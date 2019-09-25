@@ -111,9 +111,9 @@ The following steps were repeated:-
 - Computed TF-IDF matrix required for calculating cosine similarity
 - Checked shape of our posts matrix
 - Calculated cosine similarity for our post_matrix
-- Got our post indices
+- Get our post indices
 
-- Created a function to recommend articles to read,getting pairwise similarity score sorting them and getting top 5
+- Created a function to recommend articles to read,getting pairwise similarity score sorting them and getting top 5 in respect to them
 ```bash
 def recommend_article_to_read(index, cosine_sim=cosines_similarity):
     if index<posts_matrix.shape[0]:
