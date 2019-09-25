@@ -1,0 +1,38 @@
+Team C++ Recommender System
+I guess we can say, the journey has really began for us on the Machine Learning. After we passed our 
+first task building basic image classification for plate numbers, the 'hello world' of Machine Learning as 
+we can clearly see, we were asked to form groups and thus team C++ emerged, the task was given as 
+follows;
+Task 3 - ML: Recommender System
+Task: You are to build a Recommender System for lucid.blog.
+1. This system should suggest who to follow and what articles to read for a user.
+2. You will be given a database to select the necessary features needed, perform Exploratory Data 
+Analysis, build a model and make it available to be tested. Testing: You are to create a ReadMe file 
+on github.com detailing how the model you built can be tested (not model accuracy).
+This test can either be a Command Line Interface script or tested from CoLab directly. Any way you see 
+fit for your model to be tested.
+Submission: You are to submit as a group. Push all your codes (SQL queries, Notebooks, Python Files, 
+etc) to a github repository.
+Then this repo link will be posted for it to be tested.
+Lucid Database 
+Sample: https://res.cloudinary.com/xyluz/raw/upload/v1569153455/lucid\_2\_erhfgo.rar
+Immediately tasks were released, we set to work and broke it down to basic ideas. For easy 
+understanding, I outlined the process we followed, we;
+*	Brainstormed to actually understand the task,
+*	Decided on a recommender system method; content based
+*	Loaded database, then realized it was way too scanty to neither train nor test, so we raised our 
+concerns and the mentors gave a richer database.
+*	Analyzed database to remove outliers and pick relevant tables; we first had issues reading the 
+dataset as it was in SQL and we only mostly knew how to manipulate CSVs, but we were able to 
+work round it and started coding. All hands were on deck contributing ideas and codes too.
+*	Next, we Cleaned
+*	Then we built the model 
+*	Tested it
+*	Cleaned it further
+*	Added more codes and put finishing touches
+*	Then we Tested with test data and pushed to group repo for submission.
+The entire task took roughly 3 days and 4 nights, yes you read right, in coding, days are separate from 
+nights as a whole lot can happen in between.
+So, there you have it, our recommender system for Lucid
+https://github.com/theokleiao/HNG-Recommender-System
+
