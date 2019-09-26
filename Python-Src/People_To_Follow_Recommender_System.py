@@ -171,14 +171,16 @@ def similar_users(vector, n = 6):
 test_df = test_df.reset_index().drop('index',1)
 
 
-# In[12]:
+# In[40]:
 
 
 # using a user from the test data, recommend who to fllow
-test_user = test_df['user_id'][3].astype(str)
-
+test_user = users['id'].astype(str)[3]
+print(test_user)
 # print the name of the user
-print("The name of the test_user is ",users.name[test_df['user_id'][3]])
+
+
+print("The name of the test_user is ",users.name[int(test_user)])
 
 # People to follow for the user
 similar_users(model[test_user])
@@ -188,14 +190,14 @@ similar_users(model[test_user])
 # 
 # The use of Tfidf model which takes into account the importance of each word in the bio description of each user and find the similarities using cosine similarities among different users
 
-# In[13]:
+# In[41]:
 
 
 from sklearn.metrics.pairwise import linear_kernel
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 
-# In[14]:
+# In[42]:
 
 
 lucid_tfidf = TfidfVectorizer(stop_words='english')
@@ -206,13 +208,13 @@ users_short_bio_matrix = lucid_tfidf.fit_transform(users['short_bio'])
 print("The users matrix shape is ", users_short_bio_matrix.shape)
 
 
-# In[15]:
+# In[43]:
 
 
 users
 
 
-# In[16]:
+# In[44]:
 
 
 #calculating the cosine similarity for our users_short_bio_matrix 
@@ -239,7 +241,7 @@ def recommend_to_follow(index, cosine_sim=cosine_similarity):
 
 # ### Testing the TFIDF Recommender Model
 
-# In[17]:
+# In[45]:
 
 
 print("People to follow ",recommend_to_follow(50))
@@ -250,7 +252,7 @@ print("People to follow ", recommend_to_follow(750))
 
 # ## Who To Follow Recommendation on New Users Based on Popularity
 
-# In[20]:
+# In[46]:
 
 
 notifications = pd.read_sql_query("select * from notifications", engine)
@@ -274,7 +276,7 @@ def who_to_follow():
 
 # ### Testing the recommendation system for new users based on popularity
 
-# In[21]:
+# In[47]:
 
 
 who_to_follow()
