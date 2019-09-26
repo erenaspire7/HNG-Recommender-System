@@ -80,46 +80,46 @@ print("The number of unique users is ",len(unique_users), " users")
 
 random.shuffle(unique_users)
 
-# Extract 95% of users
-unique_users_train = [unique_users[i] for i in range(round(0.95 * len(unique_users)))]
+# Extract 100% of users
+unique_users = [unique_users[i] for i in range(round(1 * len(unique_users)))]
 
 # split into train and test data
-train_df = following[following['user_id'].isin(unique_users_train)]
-test_df = following[~following['user_id'].isin(unique_users_train)]
-print(train_df.shape)
-print(test_df.shape)
+train_df = following[following['user_id'].isin(unique_users)]
+# test_df = following[~following['user_id'].isin(unique_users_train)]
+# print(train_df.shape)
+# print(test_df.shape)
 
 
 # In[6]:
 
 
-# Create a follower history for each user  for both training and testing data
+# Create a follower history for each user
 
-# Training data History
-follower_history_train = []
+# Follower History
+follower_history= []
 
 # Fill the list with follower id, this indicates the history of people following a user
-for i in tqdm(unique_users_train):
+for i in tqdm(unique_users):
     temp = train_df[train_df['user_id'] == i]['follower_id'].tolist()
-    follower_history_train.append(temp)
+    follower_history.append(temp)
     
 
-# Testing data
-follower_history_test = []
-for i in tqdm(test_df['user_id'].unique()):
-    temp = test_df[test_df['user_id'] == i]['follower_id'].tolist()
-    follower_history_test.append(temp)
+# # Testing data
+# follower_history_test = []
+# for i in tqdm(test_df['user_id'].unique()):
+#     temp = test_df[test_df['user_id'] == i]['follower_id'].tolist()
+#     follower_history_test.append(temp)
 
 
 # In[7]:
 
 
 # View the lengths of the 2 histories
-print("The length of follower history for training data is ",len(follower_history_train))
-print("The length of follower history for training data is ",len(follower_history_test))
+print("The length of follower history for training data is ",len(follower_history))
+# print("The length of follower history for training data is ",len(follower_history_test))
 
 
-# In[8]:
+# In[9]:
 
 
 # Using the word2vec model to check the similar users
@@ -129,13 +129,13 @@ model = Word2Vec(window = 10, sg = 1, hs = 0,
                  alpha=0.03, min_alpha=0.0007,
                  seed = 14)
 
-model.build_vocab(follower_history_train, progress_per=200)
+model.build_vocab(follower_history, progress_per=200)
 
-model.train(follower_history_train, total_examples = model.corpus_count, 
+model.train(follower_history, total_examples = model.corpus_count, 
             epochs=10, report_delay=1)
 
 
-# In[9]:
+# In[10]:
 
 
 # Edit the users table for easy recommendation
@@ -145,7 +145,7 @@ users = users[["id", "name", "short_bio"]]
 users.drop_duplicates(inplace=True, subset='id', keep="last")
 
 
-# In[10]:
+# In[11]:
 
 
 # Function to predict who to follow
@@ -164,18 +164,11 @@ def similar_users(vector, n = 6):
 
 # ## Test the Word2Vec Recommender Model
 
-# In[11]:
-
-
-# Test the recommender system with the test data
-test_df = test_df.reset_index().drop('index',1)
-
-
-# In[40]:
+# In[22]:
 
 
 # using a user from the test data, recommend who to fllow
-test_user = users['id'].astype(str)[3]
+test_user = users['id'].astype(str)[6]
 print(test_user)
 # print the name of the user
 
@@ -183,21 +176,24 @@ print(test_user)
 print("The name of the test_user is ",users.name[int(test_user)])
 
 # People to follow for the user
-similar_users(model[test_user])
+try:
+    print("People to Follow: \n",similar_users(model[test_user]))
+except:
+    print("No recommendation for this user")
 
 
 # ## TFIDF Model
 # 
 # The use of Tfidf model which takes into account the importance of each word in the bio description of each user and find the similarities using cosine similarities among different users
 
-# In[41]:
+# In[23]:
 
 
 from sklearn.metrics.pairwise import linear_kernel
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 
-# In[42]:
+# In[24]:
 
 
 lucid_tfidf = TfidfVectorizer(stop_words='english')
@@ -208,13 +204,7 @@ users_short_bio_matrix = lucid_tfidf.fit_transform(users['short_bio'])
 print("The users matrix shape is ", users_short_bio_matrix.shape)
 
 
-# In[43]:
-
-
-users
-
-
-# In[44]:
+# In[25]:
 
 
 #calculating the cosine similarity for our users_short_bio_matrix 
@@ -241,7 +231,7 @@ def recommend_to_follow(index, cosine_sim=cosine_similarity):
 
 # ### Testing the TFIDF Recommender Model
 
-# In[45]:
+# In[26]:
 
 
 print("People to follow ",recommend_to_follow(50))
@@ -252,7 +242,7 @@ print("People to follow ", recommend_to_follow(750))
 
 # ## Who To Follow Recommendation on New Users Based on Popularity
 
-# In[46]:
+# In[27]:
 
 
 notifications = pd.read_sql_query("select * from notifications", engine)
@@ -276,7 +266,7 @@ def who_to_follow():
 
 # ### Testing the recommendation system for new users based on popularity
 
-# In[47]:
+# In[28]:
 
 
 who_to_follow()
