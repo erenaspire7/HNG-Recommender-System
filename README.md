@@ -33,6 +33,7 @@ mydb = mysql.connector.connect(host="remotemysql.com",
 
 engine = create_engine('mysql+mysqlconnector://8SawWhnha4:zFvOBIqbIz@remotemysql.com/8SawWhnha4')
 ```
+url_for_dataset_used_in_testing = https://github.com/yusuffjamal3/HNG-Recommender-System/blob/master/users_df.csv
 
 - Fetched  the tables in the dataset
 
