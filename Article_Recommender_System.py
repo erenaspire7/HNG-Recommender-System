@@ -4,7 +4,7 @@
 # In[1]:
 
 
-#importing relevant modules
+# importing relevant modules
 import pandas as pd
 import mysql.connector
 from sqlalchemy import create_engine
