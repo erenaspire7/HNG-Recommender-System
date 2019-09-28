@@ -10,7 +10,7 @@
 # In[1]:
 
 
-# Import the libraries needed 
+#Import the libraries needed 
 import pandas as pd
 import mysql.connector
 from sqlalchemy import create_engine
