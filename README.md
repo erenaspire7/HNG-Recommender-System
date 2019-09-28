@@ -134,6 +134,7 @@ def recommend_article_to_read(index, cosine_sim=cosines_similarity):
 ## HOW THE RECOMMENDER SYSTEM WORKS 
   
 ### TEST FOR WHO TO FOLLOW RECOMMENDER SYSTEM FOR LUCID.BLOG
+In addition to testing in the jupyter notebook, we also created a separate file for testing the models on Google Colab. The url for testing the model is https://colab.research.google.com/github/yusuffjamal3/HNG-Recommender-System/blob/master/Testing_Recommender_Systems.ipynb
   ```bash
   recommend_to_follow(50)
   #This displays something like:
